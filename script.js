@@ -6,17 +6,17 @@ const image=[
 ];
 
 
-const imgElements=document.querySelectorAll("img");
+const imgElement=document.querySelectorAll("img");
 
-function loadImage(index){
-    if(index>=image.length)
+function loadingImage(index){
+    if(index>=image.length
         return;
 
-    imgElements[index].src=image[index];
+    imgElement[index].src=image[index];
 
-    imgElements[index].onload=()=>{
+    imgElement[index].onload=()=>{
         loadImage(index+1);
     };
 
 }
-loadImage(0);
+loadingImage(0);
