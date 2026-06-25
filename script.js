@@ -9,7 +9,7 @@ const image=[
 const imgElement=document.querySelectorAll("img");
 
 function loadingImage(index){
-    if(index>=image.length
+    if(index>=image.length)
         return;
 
     imgElement[index].src=image[index];
