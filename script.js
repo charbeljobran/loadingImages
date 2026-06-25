@@ -15,7 +15,7 @@ function loadingImage(index){
     imgElement[index].src=image[index];
 
     imgElement[index].onload=()=>{
-        loadImage(index+1);
+        loadingImage(index+1);
     };
 
 }
